@@ -1,15 +1,16 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0",
-    "signature": "a247e199bcdb903cf8e2e7b877e8ba81e377a575"
+    "signature": "7380a65e0a65c4772c809b5552b26c7ed227b200"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v1.0": {
       "socisaWorkers/1.0.0": {
         "dependencies": {
+          "Magick.NET.Core-Q16.Native": "7.0.4.400",
           "Newtonsoft.Json": "9.0.2-beta2",
-          "socisaDll": "1.0.2-beta3",
+          "socisaDll": "1.1.0-beta5",
           "StackExchange.Redis": "1.2.0"
         },
         "runtime": {
@@ -21,9 +22,9 @@
           "lib/netstandard1.0/Google.Protobuf.dll": {}
         }
       },
-      "Magick.NET.Core-Q16/7.0.4.100": {
+      "Magick.NET.Core-Q16/7.0.4.400": {
         "dependencies": {
-          "Magick.NET.Core-Q16.Native": "7.0.4.100",
+          "Magick.NET.Core-Q16.Native": "7.0.4.400",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Xml.XPath.XmlDocument": "4.0.1"
         },
@@ -31,7 +32,7 @@
           "lib/netstandard1.3/Magick.NET.Core-Q16.dll": {}
         }
       },
-      "Magick.NET.Core-Q16.Native/7.0.4.100": {
+      "Magick.NET.Core-Q16.Native/7.0.4.400": {
         "runtimeTargets": {
           "runtimes/win7-x64/native/Magick.NET-Q16-x64.Native.dll": {
             "rid": "win7-x64",
@@ -243,15 +244,17 @@
           "lib/netstandard1.0/Shaman.System.Drawing.dll": {}
         }
       },
-      "socisaDll/1.0.2-beta3": {
+      "socisaDll/1.1.0-beta5": {
         "dependencies": {
-          "Magick.NET.Core-Q16": "7.0.4.100",
+          "Magick.NET.Core-Q16": "7.0.4.400",
+          "Magick.NET.Core-Q16.Native": "7.0.4.400",
           "Microsoft.AspNetCore.Http": "1.0.1",
           "MySql.Data": "7.0.6-IR31",
           "Newtonsoft.Json": "9.0.2-beta2",
           "OfficeOpenXml.Core.ExcelPackage": "1.0.0",
           "Shaman.EPPlus": "1.0.1.1",
-          "Xfinium.Pdf.NetCore": "6.5.0"
+          "Xfinium.Pdf.NetCore": "6.6.0.2",
+          "Xfinium.Pdf.Render.NetCore": "6.6.0.2"
         },
         "runtime": {
           "lib/netstandard1.6/socisaDll.dll": {}
@@ -377,9 +380,17 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "Xfinium.Pdf.NetCore/6.5.0": {
+      "Xfinium.Pdf.NetCore/6.6.0.2": {
         "runtime": {
           "lib/netstandard1.6/Xfinium.Pdf.NetCore.dll": {}
+        }
+      },
+      "Xfinium.Pdf.Render.NetCore/6.6.0.2": {
+        "dependencies": {
+          "Xfinium.Pdf.NetCore": "6.6.0.2"
+        },
+        "runtime": {
+          "lib/netstandard1.6/Xfinium.Pdf.Render.NetCore.dll": {}
         }
       }
     }
@@ -395,15 +406,15 @@
       "serviceable": true,
       "sha512": "sha512-l5CH4IoWys8hIQR53F+nM3RpFOX12Jj9iXVOh30ejoz0TRHApzvAHc+5T5mGnMWa/vCVfYFZkhqStn+IuK8+5g=="
     },
-    "Magick.NET.Core-Q16/7.0.4.100": {
+    "Magick.NET.Core-Q16/7.0.4.400": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-n9tWkDXFxxw8RUwFCNe1WLIcAurwBGhrQcAtcxQZJe0W8qbHL5x+xrT/qX6VFWorkVsru1eKZLcotYt9/QbPGQ=="
+      "sha512": "sha512-MI3NZ+mCe1Qsg4lQ6W9jIrw+vCbbw7CZfzoL0RZxe1nVN6gk+PXAJuVC8DLCP/V8G2ZbOr/Tdswqwi2WZoK/eA=="
     },
-    "Magick.NET.Core-Q16.Native/7.0.4.100": {
+    "Magick.NET.Core-Q16.Native/7.0.4.400": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3BHfSbsS6TqyJvCQy1+vK4A7gSV4c2p7Qs7HVenMi9apuhfsEaAt1LnQbOYcbcnG9U1t1PiNjJPdJ3LaGfNLNg=="
+      "sha512": "sha512-VqAlvCH/2PNmpikVCo3KXOc5ODsd/qDb1CxUwOMlLCbfWKNhdIAGaKiHCZ/iFE1FQTS8pVCXjGrfwa/w1/HeJA=="
     },
     "Microsoft.AspNetCore.Http/1.0.1": {
       "type": "package",
@@ -525,10 +536,10 @@
       "serviceable": true,
       "sha512": "sha512-eJFuzPFFF55SFaB6a4+u4QtuGBAeeKnqAWhZ96Yt4LrCXLQW6CaO/pO9Opa6SGYXtlX8tF/n/TrtIQQigtk6dg=="
     },
-    "socisaDll/1.0.2-beta3": {
+    "socisaDll/1.1.0-beta5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-CqpEQSp7LBqVb47N04dNj0zZ+njvD2tkYTLyPX+sbRTOiRISLdWyDYrtTpA6h5VWh5mb+O8YwTif/3K/sbKA3w=="
+      "sha512": "sha512-X3br2cbhKatO1Af3ig8CBStzszaiM3QpkLV6JiRF4Q8BBPcsJ3kzfMBq99e+4O0O1/c+Flqr4Z1Zc8p0xBqqeg=="
     },
     "StackExchange.Redis/1.2.0": {
       "type": "package",
@@ -610,10 +621,15 @@
       "serviceable": true,
       "sha512": "sha512-Zm2BdeanuncYs3NhCj4c9e1x3EXFzFBVv2wPEc/Dj4ZbI9R8ecLSR5frAsx4zJCPBtKQreQ7Q/KxJEohJZbfzA=="
     },
-    "Xfinium.Pdf.NetCore/6.5.0": {
+    "Xfinium.Pdf.NetCore/6.6.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-D+IqnaVVGh/fMO3Taga6poG1M/NB7mDOBWJIbtmJ6dswWIkXs12lGZxNGD376SnAGwhAegStnjwcv1HIck2Ykw=="
+      "sha512": "sha512-fge75hYpne5EZscw+6shIG+ZUf/R4yR5lnkla3J/uBmGuenEnkTKn3nE0TTnkA6SO41QXl2iKHtsg64cNU5J5g=="
+    },
+    "Xfinium.Pdf.Render.NetCore/6.6.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UnIH8Dx46Vc0aIq1Xh9/IeQ85yed9bma1i4qxWsDFB3sXjhskYTMHERA8EbHiiI9ugADZYY+oBA9aI7N3rHBQA=="
     }
   }
 }

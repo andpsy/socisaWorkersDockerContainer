@@ -7,10 +7,10 @@ services:
     ports: 
       - "6603:3306"
     volumes:
-      - test-data:/var/lib/mysql
+      - ./test_data:/var/lib/mysql
     environment:
        MYSQL_ROOT_PASSWORD: scasca 
-       MYSQL_DATABASE: socisa
+       # MYSQL_DATABASE: socisa
     networks:
       - back-tier
 
@@ -31,11 +31,10 @@ services:
       - db_server
     networks:
       - back-tier
+    volumes:
+      - ./scans:/socisaWorkers/scans
+      - ./pdfs:/socisaWorkers/pdfs
 
-
-
-volumes:
-  test-data:
 
 networks:
   back-tier:
