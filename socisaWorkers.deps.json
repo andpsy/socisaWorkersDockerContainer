@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0",
-    "signature": "896ef573acb423858ee79e6cd6bf4ad10919cedc"
+    "signature": "626c2b7b86375cce7a945b190a5f39ee5f20bbcb"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,7 +9,7 @@
       "socisaWorkers/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "9.0.2-beta2",
-          "socisaDll": "1.1.0-beta12",
+          "socisaDll": "1.1.0-beta19",
           "StackExchange.Redis": "1.2.0"
         },
         "runtime": {
@@ -404,6 +404,64 @@
           }
         }
       },
+      "runtime.linux-x64.CoreCompat.System.Drawing/1.0.0-beta009": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.5/runtime.linux-x64.CoreCompat.System.Drawing.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libcairo.so.2": {
+            "rid": "linux-x64",
+            "assetType": "native"
+          },
+          "runtimes/linux-x64/native/libexif.so.12": {
+            "rid": "linux-x64",
+            "assetType": "native"
+          },
+          "runtimes/linux-x64/native/libfontconfig.so.1": {
+            "rid": "linux-x64",
+            "assetType": "native"
+          },
+          "runtimes/linux-x64/native/libfreetype.so.6": {
+            "rid": "linux-x64",
+            "assetType": "native"
+          },
+          "runtimes/linux-x64/native/libgdiplus.so": {
+            "rid": "linux-x64",
+            "assetType": "native"
+          },
+          "runtimes/linux-x64/native/libgif.so.7": {
+            "rid": "linux-x64",
+            "assetType": "native"
+          },
+          "runtimes/linux-x64/native/libglib-2.0.so.0": {
+            "rid": "linux-x64",
+            "assetType": "native"
+          },
+          "runtimes/linux-x64/native/libjbig.so.0": {
+            "rid": "linux-x64",
+            "assetType": "native"
+          },
+          "runtimes/linux-x64/native/libjpeg.so.8": {
+            "rid": "linux-x64",
+            "assetType": "native"
+          },
+          "runtimes/linux-x64/native/libpixman-1.so.0": {
+            "rid": "linux-x64",
+            "assetType": "native"
+          },
+          "runtimes/linux-x64/native/libpng12.so.0": {
+            "rid": "linux-x64",
+            "assetType": "native"
+          },
+          "runtimes/linux-x64/native/libtiff.so.5": {
+            "rid": "linux-x64",
+            "assetType": "native"
+          }
+        }
+      },
       "runtime.native.System/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -525,22 +583,6 @@
             "rid": "win7-x86",
             "assetType": "native"
           }
-        }
-      },
-      "socisaDll/1.1.0-beta12": {
-        "dependencies": {
-          "CoreCompat.System.Drawing": "1.0.0-beta006",
-          "EPPlus.Core": "1.2.0",
-          "Microsoft.AspNetCore.Http": "1.1.0",
-          "MySql.Data": "7.0.6-IR31",
-          "NETStandard.Library": "1.6.1",
-          "Newtonsoft.Json": "9.0.2-beta2",
-          "OfficeOpenXml.Core.ExcelPackage": "1.0.0",
-          "Xfinium.Pdf.NetCore": "6.6.0.2",
-          "Xfinium.Pdf.Render.NetCore": "6.6.0.2"
-        },
-        "runtime": {
-          "lib/netstandard1.6/socisaDll.dll": {}
         }
       },
       "StackExchange.Redis/1.2.0": {
@@ -1706,6 +1748,23 @@
         "runtime": {
           "lib/netstandard1.6/Xfinium.Pdf.Render.NetCore.dll": {}
         }
+      },
+      "socisaDll/1.1.0-beta19": {
+        "dependencies": {
+          "CoreCompat.System.Drawing": "1.0.0-beta006",
+          "EPPlus.Core": "1.2.0",
+          "Microsoft.AspNetCore.Http": "1.1.0",
+          "MySql.Data": "7.0.6-IR31",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.2-beta2",
+          "OfficeOpenXml.Core.ExcelPackage": "1.0.0",
+          "runtime.linux-x64.CoreCompat.System.Drawing": "1.0.0-beta009",
+          "Xfinium.Pdf.NetCore": "6.6.0.2",
+          "Xfinium.Pdf.Render.NetCore": "6.6.0.2"
+        },
+        "runtime": {
+          "socisaDll.dll": {}
+        }
       }
     }
   },
@@ -1860,6 +1919,11 @@
       "serviceable": true,
       "sha512": "sha512-vGja8EJnM2AotZvIzBT/HtI1AWDuWjQ/uIOwTwsLP2uyO+Z6qxw1BF8GFdyDuFxmOHlTDmy2uCJD32Svolxwfg=="
     },
+    "runtime.linux-x64.CoreCompat.System.Drawing/1.0.0-beta009": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6t5B23rZDy6xXWKWZ34Tj2mVeq+CCW4nFZmBCcC1U4lbdhWu2KCQi6Mr1fPJ0F8LErfT7ict8yL0MXL/xBvswQ=="
+    },
     "runtime.native.System/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1939,11 +2003,6 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-ykiYCf/0hIc0xm+g6bVX8nw9St5Ool+r4US+B+56Lv/GFnDG5G9BK4n7WkrwEpuWV3XjMn38oHgHOnNMzBVNKA=="
-    },
-    "socisaDll/1.1.0-beta12": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-7tAUN6RLbZp7hl1OgnepIzgT1/qLQUk4ijtwbNl3RbtXbS9IRWjvocDCbt9G1t4Wsj2sy50gcXJeLdZszSaORQ=="
     },
     "StackExchange.Redis/1.2.0": {
       "type": "package",
@@ -2349,6 +2408,11 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-UnIH8Dx46Vc0aIq1Xh9/IeQ85yed9bma1i4qxWsDFB3sXjhskYTMHERA8EbHiiI9ugADZYY+oBA9aI7N3rHBQA=="
+    },
+    "socisaDll/1.1.0-beta19": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
