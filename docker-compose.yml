@@ -36,7 +36,7 @@ services:
       - ./scans:/socisaWorkers/scans
       - ./pdfs:/socisaWorkers/pdfs
       - ./logs:/socisaWorkers/logs
-
+      - ./imports:/socisaWorkers/imports
 
 networks:
   back-tier:
