@@ -1,0 +1,48 @@
+"--host=localhost --port=3306 --database=socisa --user=root --password=scasca --command-predicate=Delete --command-object-repository=ActionsRepository --authenticated-user-id=1 --command-arguments={\"ID\":9,\"NAME\":\"AdministrarYYYY\",\"SUMMARY\":\"AdministrarYYYY\",\"IMG\":\"creareDosarRegres@96.png\",\"ACTION\":\"/administrare\",\"OBJECT_NAME\":\"administrare\",\"TYPE\":\"menu\",\"ORDER\":9}"
+"--host=localhost --port=3306 --database=socisa --user=root --password=scasca --command-predicate=Update --command-object-repository=ActionsRepository --authenticated-user-id=1 --command-arguments="8***{\"NAME\":\"AdministrarYYYY\",\"SUMMARY\":\"AdministrarYYYY\",\"ORDER\":9}"
+
+
+"--command-predicate=GetAll --command-object-repository=ActionsRepository"
+"--command-predicate=GetFiltered --command-object-repository=DosareRepository --command-arguments=null***null***D.ID>=1 AND D.NR_DOSAR_CASCO LIKE '%CB750%'***null"
+"--command-predicate=Find --command-object-repository=DosareRepository --command-arguments=1"
+"--command-predicate=Insert --command-object-repository=ActionsRepository --command-arguments={\"NAME\":\"AdministrarYYYY\",\"SUMMARY\":\"AdministrarYYYY\",\"IMG\":\"creareDosarRegres@96.png\",\"ACTION\":\"/administrare\",\"OBJECT_NAME\":\"administrare\",\"TYPE\":\"menu\",\"ORDER\":9}"
+"--command-predicate=Update --command-object-repository=ActionsRepository --command-arguments=8***{\"NAME\":\"AdministrarYYYY\",\"SUMMARY\":\"AdministrarYYYY\",\"ORDER\":9}"
+"--command-predicate=Delete --command-object-repository=ActionsRepository --command-arguments={\"ID\":9,\"NAME\":\"AdministrarYYYY\",\"SUMMARY\":\"AdministrarYYYY\",\"IMG\":\"creareDosarRegres@96.png\",\"ACTION\":\"/administrare\",\"OBJECT_NAME\":\"administrare\",\"TYPE\":\"menu\",\"ORDER\":9}"
+"--command-predicate=Delete --command-object-repository=ActionsRepository --command-arguments=9"
+
+"--command-predicate=HasChildrens --command-object-repository=DosareRepository --command-arguments=1***procese"
+"--command-predicate=HasChildren --command-object-repository=DosareRepository --command-arguments=1***procese***5"
+"--command-predicate=GetChildrens --command-object-repository=DosareRepository --command-arguments=1***stadii"
+"--command-predicate=GetChildren --command-object-repository=DosareRepository --command-arguments=1***stadii***5"
+
+
+
+
+
+"{\"command_predicate\":\"GetFiltered\",\"command_object_repository\":\"DosareRepository\",\"command_arguments\":\"null***null***{'NR_DOSAR_CASCO':'CB','ASIGURAT_CASCO':'UNICREDIT','SOCIETATE_RCA':'BCR'}***null\"}"
+"{\"command_predicate\":\"GetFiltered\",\"command_object_repository\":\"DosareRepository\",\"command_arguments\":\"null***null***{'NR_DOSAR_CASCO':'CB','ASIGURAT_CASCO':'UNICREDIT','SOCIETATE_RCA':'BCR','DATA_SCA':'2009-12-09'}***null\"}"
+"{\"command_predicate\":\"GetFiltered\",\"command_object_repository\":\"DosareRepository\",\"command_arguments\":\"{'sort':null,'order':null,'filter':{'NR_SCA':'55'},'limit':null}\"}"
+"{\"command_predicate\":\"GetFiltered\",\"command_object_repository\":\"DosareRepository\",\"command_arguments\":\"{'sort':null,'order':null,'filter':{'NR_SCA':'55*'},'limit':null}\"}"
+"{\"command_predicate\":\"GetFiltered\",\"command_object_repository\":\"DosareRepository\",\"command_arguments\":\"null***null***{'NR_SCA':'55*'}***null\"}"
+
+"{\"command_predicate\":\"Insert\",\"command_object_repository\":\"DocumenteScanateRepository\",\"command_arguments\":\"{'DENUMIRE_FISIER':'test.jpg','EXTENSIE_FISIER':'.jpg','DATA_INCARCARE':'2017-01-22 22:30:00','DIMENSIUNE_FISIER':'1024','ID_TIP_DOCUMENT':1,'ID_DOSAR':1,'DETALII':'test proces verbal','VIZA_CASCO':0,'FILE_CONTENT':null,'SMALL_ICON':null,'MEDIUM_ICON':null,'CALE_FISIER':'test.jpg'}\"}"
+"{\"command_predicate\":\"Insert\",\"command_object_repository\":\"DocumenteScanateRepository\",\"command_arguments\":\"{'DENUMIRE_FISIER':'metallica.pdf','ID_TIP_DOCUMENT':1,'ID_DOSAR':1,'DETALII':'test proces verbal','VIZA_CASCO':0,'FILE_CONTENT':null,'SMALL_ICON':null,'MEDIUM_ICON':null,'CALE_FISIER':'metallica.pdf'}\"}"
+
+"{\"command_predicate\":\"Update\",\"command_object_repository\":\"DocumenteScanateRepository\",\"command_arguments\":\"{'ID':24,'VIZA_CASCO':1}\"}"
+"{\"command_predicate\":\"Delete\",\"command_object_repository\":\"DocumenteScanateRepository\",\"command_arguments\":\"{'ID':24}\"}"
+
+"{\"command_predicate\":\"ExportDosarCompletToPdf\",\"command_object_repository\":\"DosareRepository\",\"command_arguments\":\"24\"}"   // nu merge cu {'ID':24} ca-l ia ca si obiect Dosar care are doar ID-ul completat!
+"{\"command_predicate\":\"Update\",\"command_object_repository\":\"DosareRepository\",\"command_arguments\":\"{'ID':24,'AVIZAT':1}\"}"
+"{\"command_predicate\":\"Update\",\"command_object_repository\":\"DosareRepository\",\"command_arguments\":\"24***{'AVIZAT':1}\"}"
+
+
+"{\"redis_client_id\":\"test\",\"command_predicate\":\"Insert\",\"command_object_repository\":\"DocumenteScanateRepository\",\"command_arguments\":\"{'DENUMIRE_FISIER':'metallica.pdf','EXTENSIE_FISIER':'.pdf','DATA_INCARCARE':'2017-01-28 22:30:00','DIMENSIUNE_FISIER':'156731','ID_TIP_DOCUMENT':1,'ID_DOSAR':1,'DETALII':'test proces verbal','VIZA_CASCO':0,'FILE_CONTENT':null,'SMALL_ICON':null,'MEDIUM_ICON':null,'CALE_FISIER':'metallica.pdf'}\"}"
+
+"{'command_predicate':'GetFiltered', 'redis_client_id': 'boomshaqalaqaboom','command_object_repository':'DosareRepository','command_arguments':\"null***null***{'NR_DOSAR_CASCO':'CB','ASIGURAT_CASCO':'UNICREDIT','SOCIETATE_RCA':'BCR','DATA_SCA':'2009-12-09'}***null\"}"
+
+"{'command_predicate':'GetFiltered', 'redis_client_id': 'boomshaqalaqaboom','command_object_repository':'DosareRepository','command_arguments':\"{'sort':null,'order':null,'filter':{'NR_DOSAR_CASCO':'CB','ASIGURAT_CASCO':'UNICREDIT','SOCIETATE_RCA':'BCR','DATA_SCA':'2009-12-09'},'limit':null}\"}"
+"{'command_predicate':'GetFiltered', 'redis_client_id': 'boomshaqalaqaboom','command_object_repository':'DosareRepository','command_arguments':{'sort':null,'order':null,'filter':{'NR_DOSAR_CASCO':'CB','ASIGURAT_CASCO':'UNICREDIT','SOCIETATE_RCA':'BCR','DATA_SCA':'2009-12-09'},'limit':null}}"
+
+
+"{\"redis_client_id\":\"test\",\"command_predicate\":\"GetDosareFromExcel\",\"command_object_repository\":\"DosareRepository\",\"command_arguments\":\"{'sheet':'Sheet1','fileName':'Import dosare.xls'}\"}"
+"{\"redis_client_id\":\"test\",\"command_predicate\":\"GetDosareFromExcel\",\"command_object_repository\":\"DosareRepository\","\command_arguments\":\"Sheet1***Import dosare.xls\"}"
