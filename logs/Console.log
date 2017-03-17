@@ -1,0 +1,163 @@
+
+03/16/2017 19:37:17>> MySqlConnectionString: Server=db_server;Port=3306;Database=socisa;Uid=root;Pwd=scasca;
+03/16/2017 19:37:17>> =====================================================
+
+03/16/2017 19:46:50>> Got Redis command: {"command_predicate":"Insert","command_object_repository":"DocumenteScanateRepository","command_arguments":"{'DENUMIRE_FISIER':'pos. 1 - nonreturn valve.pdf','ID_TIP_DOCUMENT':5,'ID_DOSAR':1,'DETALII':'test proces verbal','VIZA_CASCO':0,'FILE_CONTENT':null,'SMALL_ICON':null,'MEDIUM_ICON':null,'CALE_FISIER':'pos. 1 - nonreturn valve.pdf'}","authenticated_user":"popescu.cristian@gmail.com","redis_client_id":"test"}
+03/16/2017 19:46:52>> 
+	RedisClientId: test 
+	Predicate: Insert 
+	Repository: DocumenteScanateRepository 
+	Arguments: {'DENUMIRE_FISIER':'pos. 1 - nonreturn valve.pdf','ID_TIP_DOCUMENT':5,'ID_DOSAR':1,'DETALII':'test proces verbal','VIZA_CASCO':0,'FILE_CONTENT':null,'SMALL_ICON':null,'MEDIUM_ICON':null,'CALE_FISIER':'pos. 1 - nonreturn valve.pdf'} 
+	MessageId: 
+03/16/2017 19:46:52>> =====================================================
+
+03/16/2017 19:46:52>> Found Multiple Methods: Insert
+03/16/2017 19:46:53>> =====================================================
+
+03/16/2017 19:47:00>> {"MessageId":null,"CorrelationId":null,"RedisClientId":"test","Status":true,"Message":null,"Result":24,"InsertedId":24,"Error":null}
+03/16/2017 19:47:00>> =====================================================
+
+03/16/2017 19:52:32>> Got Redis command: {"command_predicate":"Insert","command_object_repository":"DocumenteScanateRepository","command_arguments":"{'DENUMIRE_FISIER':'header.png','ID_TIP_DOCUMENT':3,'ID_DOSAR':1,'DETALII':'test proces verbal','VIZA_CASCO':0,'FILE_CONTENT':null,'SMALL_ICON':null,'MEDIUM_ICON':null,'CALE_FISIER':'header.png'}","authenticated_user":"popescu.cristian@gmail.com","redis_client_id":"test"}
+03/16/2017 19:52:32>> 
+	RedisClientId: test 
+	Predicate: Insert 
+	Repository: DocumenteScanateRepository 
+	Arguments: {'DENUMIRE_FISIER':'header.png','ID_TIP_DOCUMENT':3,'ID_DOSAR':1,'DETALII':'test proces verbal','VIZA_CASCO':0,'FILE_CONTENT':null,'SMALL_ICON':null,'MEDIUM_ICON':null,'CALE_FISIER':'header.png'} 
+	MessageId: 
+03/16/2017 19:52:32>> =====================================================
+
+03/16/2017 19:52:32>> Found Multiple Methods: Insert
+03/16/2017 19:52:32>> =====================================================
+
+03/16/2017 19:52:32>> {"MessageId":null,"CorrelationId":null,"RedisClientId":"test","Status":true,"Message":null,"Result":25,"InsertedId":25,"Error":null}
+03/16/2017 19:52:32>> =====================================================
+
+03/16/2017 19:56:16>> Got Redis command: {"command_predicate":"Insert","command_object_repository":"DocumenteScanateRepository","command_arguments":"{'DENUMIRE_FISIER':'read.png','ID_TIP_DOCUMENT':4,'ID_DOSAR':1,'DETALII':'test proces verbal','VIZA_CASCO':0,'FILE_CONTENT':null,'SMALL_ICON':null,'MEDIUM_ICON':null,'CALE_FISIER':'read.png'}","authenticated_user":"popescu.cristian@gmail.com","redis_client_id":"test"}
+03/16/2017 19:56:16>> 
+	RedisClientId: test 
+	Predicate: Insert 
+	Repository: DocumenteScanateRepository 
+	Arguments: {'DENUMIRE_FISIER':'read.png','ID_TIP_DOCUMENT':4,'ID_DOSAR':1,'DETALII':'test proces verbal','VIZA_CASCO':0,'FILE_CONTENT':null,'SMALL_ICON':null,'MEDIUM_ICON':null,'CALE_FISIER':'read.png'} 
+	MessageId: 
+03/16/2017 19:56:16>> =====================================================
+
+03/16/2017 19:56:16>> Found Multiple Methods: Insert
+03/16/2017 19:56:16>> =====================================================
+
+03/16/2017 19:56:17>> {"MessageId":null,"CorrelationId":null,"RedisClientId":"test","Status":true,"Message":null,"Result":26,"InsertedId":26,"Error":null}
+03/16/2017 19:56:17>> =====================================================
+
+03/16/2017 20:54:00>> Got Redis command: {"command_predicate":"Insert","command_object_repository":"DocumenteScanateRepository","command_arguments":"{'DENUMIRE_FISIER':'pos. 1 - nonreturn valve.pdf','ID_TIP_DOCUMENT':5,'ID_DOSAR':5376,'DETALII':'test proces verbal','VIZA_CASCO':0,'FILE_CONTENT':null,'SMALL_ICON':null,'MEDIUM_ICON':null,'CALE_FISIER':'pos. 1 - nonreturn valve.pdf'}","authenticated_user":"popescu.cristian@gmail.com","redis_client_id":"test"}
+03/16/2017 20:54:00>> 
+	RedisClientId: test 
+	Predicate: Insert 
+	Repository: DocumenteScanateRepository 
+	Arguments: {'DENUMIRE_FISIER':'pos. 1 - nonreturn valve.pdf','ID_TIP_DOCUMENT':5,'ID_DOSAR':5376,'DETALII':'test proces verbal','VIZA_CASCO':0,'FILE_CONTENT':null,'SMALL_ICON':null,'MEDIUM_ICON':null,'CALE_FISIER':'pos. 1 - nonreturn valve.pdf'} 
+	MessageId: 
+03/16/2017 20:54:00>> =====================================================
+
+03/16/2017 20:54:00>> Found Multiple Methods: Insert
+03/16/2017 20:54:00>> =====================================================
+
+03/16/2017 20:54:05>> {"MessageId":null,"CorrelationId":null,"RedisClientId":"test","Status":true,"Message":null,"Result":27,"InsertedId":27,"Error":null}
+03/16/2017 20:54:05>> =====================================================
+
+03/16/2017 21:03:12>> Got Redis command: {"command_predicate":"ExportDosarCompletToPdf","command_object_repository":"DosareRepository","command_arguments":"5376","authenticated_user":"popescu.cristian@gmail.com"}
+03/16/2017 21:03:13>> 
+	RedisClientId:  
+	Predicate: ExportDosarCompletToPdf 
+	Repository: DosareRepository 
+	Arguments: 5376 
+	MessageId: 
+03/16/2017 21:03:13>> =====================================================
+
+03/16/2017 21:03:13>> Found Multiple Methods: ExportDosarCompletToPdf
+03/16/2017 21:03:13>> =====================================================
+
+03/16/2017 21:03:14>> {"MessageId":null,"CorrelationId":null,"RedisClientId":null,"Status":false,"Message":"Object reference not set to an instance of an object.","Result":null,"InsertedId":null,"Error":[{"ID":-2147467261,"ERROR_CODE":"-2147467261","ERROR_MESSAGE":"Object reference not set to an instance of an object.","ERROR_OBJECT":"socisaDll","ERROR_TYPE":"Critical"}]}
+03/16/2017 21:03:14>> =====================================================
+
+03/16/2017 21:03:15>> Error: System.ArgumentException: A null key is not valid in this context
+   at StackExchange.Redis.RedisKey.AssertNotNull()
+   at StackExchange.Redis.RedisDatabase.ListRightPushAsync(RedisKey key, RedisValue value, When when, CommandFlags flags)
+   at socisaWorkers.Program.Main(String[] args)
+03/16/2017 21:03:15>> =====================================================
+
+03/16/2017 21:04:46>> Got Redis command: {"command_predicate":"ExportDosarCompletToPdf","command_object_repository":"DosareRepository","command_arguments":"5376","authenticated_user":"popescu.cristian@gmail.com","redis_client_id":"test"}
+03/16/2017 21:04:46>> 
+	RedisClientId: test 
+	Predicate: ExportDosarCompletToPdf 
+	Repository: DosareRepository 
+	Arguments: 5376 
+	MessageId: 
+03/16/2017 21:04:46>> =====================================================
+
+03/16/2017 21:04:46>> Found Multiple Methods: ExportDosarCompletToPdf
+03/16/2017 21:04:46>> =====================================================
+
+03/16/2017 21:04:46>> {"MessageId":null,"CorrelationId":null,"RedisClientId":"test","Status":false,"Message":"Object reference not set to an instance of an object.","Result":null,"InsertedId":null,"Error":[{"ID":-2147467261,"ERROR_CODE":"-2147467261","ERROR_MESSAGE":"Object reference not set to an instance of an object.","ERROR_OBJECT":"socisaDll","ERROR_TYPE":"Critical"}]}
+03/16/2017 21:04:46>> =====================================================
+
+03/16/2017 21:12:54>> MySqlConnectionString: Server=db_server;Port=3306;Database=socisa;Uid=root;Pwd=scasca;
+03/16/2017 21:12:54>> =====================================================
+
+03/16/2017 21:16:00>> Got Redis command: {"command_predicate":"ExportDosarCompletToPdf","command_object_repository":"DosareRepository","command_arguments":"5376","authenticated_user":"popescu.cristian@gmail.com","redis_client_id":"test"}
+03/16/2017 21:16:01>> 
+	RedisClientId: test 
+	Predicate: ExportDosarCompletToPdf 
+	Repository: DosareRepository 
+	Arguments: 5376 
+	MessageId: 
+03/16/2017 21:16:01>> =====================================================
+
+03/16/2017 21:16:01>> Found Multiple Methods: ExportDosarCompletToPdf
+03/16/2017 21:16:01>> =====================================================
+
+03/16/2017 21:16:05>> {"MessageId":null,"CorrelationId":null,"RedisClientId":"test","Status":false,"Message":"Empty path name is not legal.\nParameter name: path","Result":null,"InsertedId":null,"Error":[{"ID":-2147024809,"ERROR_CODE":"-2147024809","ERROR_MESSAGE":"Empty path name is not legal.\nParameter name: path","ERROR_OBJECT":"System.IO.FileSystem","ERROR_TYPE":"Critical"}]}
+03/16/2017 21:16:05>> =====================================================
+
+03/16/2017 21:19:33>> Got Redis command: {"command_predicate":"ExportDosarCompletToPdf","command_object_repository":"DosareRepository","command_arguments":"5376","authenticated_user":"popescu.cristian@gmail.com","redis_client_id":"test"}
+03/16/2017 21:19:33>> 
+	RedisClientId: test 
+	Predicate: ExportDosarCompletToPdf 
+	Repository: DosareRepository 
+	Arguments: 5376 
+	MessageId: 
+03/16/2017 21:19:33>> =====================================================
+
+03/16/2017 21:19:33>> Found Multiple Methods: ExportDosarCompletToPdf
+03/16/2017 21:19:33>> =====================================================
+
+03/16/2017 21:19:34>> {"MessageId":null,"CorrelationId":null,"RedisClientId":"test","Status":false,"Message":"Empty path name is not legal.\nParameter name: path","Result":null,"InsertedId":null,"Error":[{"ID":-2147024809,"ERROR_CODE":"-2147024809","ERROR_MESSAGE":"Empty path name is not legal.\nParameter name: path","ERROR_OBJECT":"System.IO.FileSystem","ERROR_TYPE":"Critical"}]}
+03/16/2017 21:19:34>> =====================================================
+
+03/16/2017 21:24:11>> Got Redis command: {"command_predicate":"ExportDosarCompletToPdf","command_object_repository":"DosareRepository","command_arguments":"5376","authenticated_user":"popescu.cristian@gmail.com","redis_client_id":"test"}
+03/16/2017 21:24:11>> 
+	RedisClientId: test 
+	Predicate: ExportDosarCompletToPdf 
+	Repository: DosareRepository 
+	Arguments: 5376 
+	MessageId: 
+03/16/2017 21:24:11>> =====================================================
+
+03/16/2017 21:24:11>> Found Multiple Methods: ExportDosarCompletToPdf
+03/16/2017 21:24:11>> =====================================================
+
+03/16/2017 21:24:12>> {"MessageId":null,"CorrelationId":null,"RedisClientId":"test","Status":false,"Message":"Empty path name is not legal.\nParameter name: path","Result":null,"InsertedId":null,"Error":[{"ID":-2147024809,"ERROR_CODE":"-2147024809","ERROR_MESSAGE":"Empty path name is not legal.\nParameter name: path","ERROR_OBJECT":"System.IO.FileSystem","ERROR_TYPE":"Critical"}]}
+03/16/2017 21:24:12>> =====================================================
+
+03/16/2017 21:31:54>> Error: System.AggregateException: One or more errors occurred. (No connection is available to service this operation: RPOP Commands; SocketClosed on 172.18.0.2:6379/Subscription, origin: ProcessReadBytes, input-buffer: 0, outstanding: 0, last-read: 56s ago, last-write: 56s ago, unanswered-write: 11012s ago, keep-alive: 60s, pending: 0, state: ConnectedEstablished, in: 0, ar: 0, last-heartbeat: 0s ago, last-mbeat: 0s ago, global: 0s ago) ---> StackExchange.Redis.RedisConnectionException: No connection is available to service this operation: RPOP Commands; SocketClosed on 172.18.0.2:6379/Subscription, origin: ProcessReadBytes, input-buffer: 0, outstanding: 0, last-read: 56s ago, last-write: 56s ago, unanswered-write: 11012s ago, keep-alive: 60s, pending: 0, state: ConnectedEstablished, in: 0, ar: 0, last-heartbeat: 0s ago, last-mbeat: 0s ago, global: 0s ago ---> StackExchange.Redis.RedisConnectionException: SocketClosed on 172.18.0.2:6379/Subscription, origin: ProcessReadBytes, input-buffer: 0, outstanding: 0, last-read: 56s ago, last-write: 56s ago, unanswered-write: 11012s ago, keep-alive: 60s, pending: 0, state: ConnectedEstablished, in: 0, ar: 0, last-heartbeat: 0s ago, last-mbeat: 0s ago, global: 0s ago
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at socisaWorkers.Program.Main(String[] args)
+---> (Inner Exception #0) StackExchange.Redis.RedisConnectionException: No connection is available to service this operation: RPOP Commands; SocketClosed on 172.18.0.2:6379/Subscription, origin: ProcessReadBytes, input-buffer: 0, outstanding: 0, last-read: 56s ago, last-write: 56s ago, unanswered-write: 11012s ago, keep-alive: 60s, pending: 0, state: ConnectedEstablished, in: 0, ar: 0, last-heartbeat: 0s ago, last-mbeat: 0s ago, global: 0s ago ---> StackExchange.Redis.RedisConnectionException: SocketClosed on 172.18.0.2:6379/Subscription, origin: ProcessReadBytes, input-buffer: 0, outstanding: 0, last-read: 56s ago, last-write: 56s ago, unanswered-write: 11012s ago, keep-alive: 60s, pending: 0, state: ConnectedEstablished, in: 0, ar: 0, last-heartbeat: 0s ago, last-mbeat: 0s ago, global: 0s ago
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException)<---
+
+03/16/2017 21:31:54>> =====================================================
+
+03/16/2017 21:31:54>> Command run without errors.
+03/16/2017 21:31:54>> =====================================================
