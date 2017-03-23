@@ -69,3 +69,51 @@ System.AggregateException: One or more errors occurred. (No connection is availa
    at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException)<---
 
 =====================================================
+22.03.2017 17:29:45
+Newtonsoft.Json.JsonReaderException: Additional text encountered after finished reading JSON content: }. Path '', line 1, position 159.
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at socisaWorkers.Program.GenerateParameters(String Command, String connectionString)
+=====================================================
+22.03.2017 17:29:45
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at socisaWorkers.Program.GenerateParameters(String[] args, String connectionString)
+   at socisaWorkers.Program.GenerateParameters(String Command, String connectionString)
+   at socisaWorkers.Program.Main(String[] args)
+=====================================================
+22.03.2017 18:19:18
+Newtonsoft.Json.JsonReaderException: Additional text encountered after finished reading JSON content: }. Path '', line 1, position 159.
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at socisaWorkers.Program.GenerateParameters(String Command, String connectionString)
+=====================================================
+22.03.2017 18:19:18
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at socisaWorkers.Program.GenerateParameters(String[] args, String connectionString)
+   at socisaWorkers.Program.GenerateParameters(String Command, String connectionString)
+   at socisaWorkers.Program.Main(String[] args)
+=====================================================
+22.03.2017 18:31:22
+MySql.Data.MySqlClient.MySqlException: Data too long for column '_RESULT' at row 1
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at socisaWorkers.Program.LogAction(String MysqlConnectionString, ParametersResponse pr, response r)
+=====================================================
+22.03.2017 18:32:10
+MySql.Data.MySqlClient.MySqlException: Data too long for column '_RESULT' at row 1
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at socisaWorkers.Program.LogAction(String MysqlConnectionString, ParametersResponse pr, response r)
+=====================================================

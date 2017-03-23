@@ -24,9 +24,12 @@
 "{\"command_predicate\":\"GetFiltered\",\"command_object_repository\":\"DosareRepository\",\"command_arguments\":\"{'sort':null,'order':null,'filter':{'NR_SCA':'55'},'limit':null}\"}"
 "{\"command_predicate\":\"GetFiltered\",\"command_object_repository\":\"DosareRepository\",\"command_arguments\":\"{'sort':null,'order':null,'filter':{'NR_SCA':'55*'},'limit':null}\"}"
 "{\"command_predicate\":\"GetFiltered\",\"command_object_repository\":\"DosareRepository\",\"command_arguments\":\"null***null***{'NR_SCA':'55*'}***null\"}"
+"{\"command_predicate\":\"GetFiltered\",\"command_object_repository\":\"DosareRepository\",\"command_arguments\":\"{'sort':null,'order':null,'filter':{'DATA_SCA':'2009-01-01?2009-12-31'},'limit':null}\"}"
+
+"{\"command_predicate\":\"GetFiltered\",\"command_object_repository\":\"UtilizatoriRepository\",\"command_arguments\":\"{'sort':null,'order':null,'filter':{'EMAIL':'popescu.cristian@gmail.com'},'limit':null}\"}"
 
 "{\"command_predicate\":\"Insert\",\"command_object_repository\":\"DocumenteScanateRepository\",\"command_arguments\":\"{'DENUMIRE_FISIER':'test.jpg','EXTENSIE_FISIER':'.jpg','DATA_INCARCARE':'2017-01-22 22:30:00','DIMENSIUNE_FISIER':'1024','ID_TIP_DOCUMENT':1,'ID_DOSAR':1,'DETALII':'test proces verbal','VIZA_CASCO':0,'FILE_CONTENT':null,'SMALL_ICON':null,'MEDIUM_ICON':null,'CALE_FISIER':'test.jpg'}\"}"
-"{\"command_predicate\":\"Insert\",\"command_object_repository\":\"DocumenteScanateRepository\",\"command_arguments\":\"{'DENUMIRE_FISIER':'metallica.pdf','ID_TIP_DOCUMENT':1,'ID_DOSAR':1,'DETALII':'test proces verbal','VIZA_CASCO':0,'FILE_CONTENT':null,'SMALL_ICON':null,'MEDIUM_ICON':null,'CALE_FISIER':'metallica.pdf'}\"}"
+"{\"command_predicate\":\"Insert\",\"command_object_repository\":\"DocumenteScanateRepository\",\"command_arguments\":\"{'DENUMIRE_FISIER':'read.png','ID_TIP_DOCUMENT':4,'ID_DOSAR':1,'DETALII':'test proces verbal','VIZA_CASCO':0,'FILE_CONTENT':null,'SMALL_ICON':null,'MEDIUM_ICON':null,'CALE_FISIER':'read.png'}\",\"authenticated_user\":\"popescu.cristian@gmail.com\",\"redis_client_id\":\"test\"}"
 
 "{\"command_predicate\":\"Update\",\"command_object_repository\":\"DocumenteScanateRepository\",\"command_arguments\":\"{'ID':24,'VIZA_CASCO':1}\"}"
 "{\"command_predicate\":\"Delete\",\"command_object_repository\":\"DocumenteScanateRepository\",\"command_arguments\":\"{'ID':24}\"}"
@@ -46,3 +49,20 @@
 
 "{\"redis_client_id\":\"test\",\"command_predicate\":\"GetDosareFromExcel\",\"command_object_repository\":\"DosareRepository\",\"command_arguments\":\"{'sheet':'Sheet1','fileName':'Import dosare.xls'}\"}"
 "{\"redis_client_id\":\"test\",\"command_predicate\":\"GetDosareFromExcel\",\"command_object_repository\":\"DosareRepository\","\command_arguments\":\"Sheet1***Import dosare.xls\"}"
+
+"{'command_predicate':'Insert','command_object_repository':'DosareRepository','command_arguments':{'DATA_EVENIMENT':'2017-02-28T22:00:00.000Z','DATA_SCA':null,'DATA_IESIRE_CASCO':null,'DATA_INTRARE_RCA':null,'ID_ASIGURAT_CASCO':5353,'ID_AUTO_CASCO':7878,'ID_AUTO_RCA':8512,'ID_SOCIETATE_CASCO':2,'ID_SOCIETATE_RCA':3,'NR_DOSAR_CASCO':'AA89989898','ID_ASIGURAT_RCA':94,'NR_POLITA_CASCO':'KK989888776','NR_POLITA_RCA':'HH888u8u8u8u8u','VALOARE_DAUNA':1234,'VALOARE_REGRES':444},'message_id':'b2260eee-4fed-438a-a5de-df982ae894f1','redis_client_id':'b2260eee-4fed-438a-a5de-df982ae894f1','authenticated_user':'popescu.cristian@gmail.com'}"
+"{'command_predicate':'Insert','command_object_repository':'DosareRepository','command_arguments':{'DATA_EVENIMENT':'2017-02-28T22:00:00.000Z','DATA_SCA':null,'DATA_IESIRE_CASCO':null,'DATA_INTRARE_RCA':null,'ID_ASIGURAT_CASCO':1,'ID_AUTO_CASCO':1,'ID_AUTO_RCA':2,'ID_SOCIETATE_CASCO':2,'ID_SOCIETATE_RCA':3,'NR_DOSAR_CASCO':'AA89989898','ID_ASIGURAT_RCA':2,'NR_POLITA_CASCO':'KK989888776','NR_POLITA_RCA':'HH888u8u8u8u8u','VALOARE_DAUNA':1234,'VALOARE_REGRES':444},'message_id':'b2260eee-4fed-438a-a5de-df982ae894f1','redis_client_id':'test','authenticated_user':'popescu.cristian@gmail.com'}"
+
+"{\"command_predicate\":\"LoadTemplateFileIntoDb\",\"command_object_repository\":\"DocumenteScanateRepository\",\"command_arguments\":\"c:\\Cerere_despagubire_t2.pdf***test\",\"authenticated_user\":\"popescu.cristian@gmail.com\"}"
+
+"{\"command_predicate\":\"ExportDosarToPdf\",\"command_object_repository\":\"DosareRepository\",\"command_arguments\":\"Cerere_despagubire_t2.pdf***1\",\"authenticated_user\":\"popescu.cristian@gmail.com\"}"
+
+"{\"command_predicate\":\"ExportDosarCompletToPdf\",\"command_object_repository\":\"DosareRepository\",\"command_arguments\":\"5376\",\"authenticated_user\":\"popescu.cristian@gmail.com\"}" 
+
+"{\"command_predicate\":\"GetChildrens\",\"command_object_repository\":\"UtilizatoriRepository\",\"command_arguments\":\"3***societati_asigurare\",\"authenticated_user\":\"popescu.cristian@gmail.com\"}" 
+
+"{'command_predicate':'Insert','command_object_repository':'DosareRepository','command_arguments':{'DATA_EVENIMENT':'2017-02-28T22:00:00.000Z','DATA_SCA':null,'DATA_IESIRE_CASCO':null,'DATA_INTRARE_RCA':null,'ID_ASIGURAT_CASCO':1,'ID_AUTO_CASCO':1,'ID_AUTO_RCA':2,'ID_SOCIETATE_CASCO':2,'ID_SOCIETATE_RCA':3,'NR_DOSAR_CASCO':'KKK666','ID_ASIGURAT_RCA':2,'NR_POLITA_CASCO':'JJJGHFGFF555','NR_POLITA_RCA':'HGFH654645','VALOARE_DAUNA':'1234,58','VALOARE_REGRES':'444,58'},'message_id':'b2260eee-4fed-438a-a5de-df982ae894f1','redis_client_id':'test','authenticated_user':'popescu.cristian@gmail.com'}"
+"{'command_predicate':'GetAll', 'redis_client_id': 'boomshaqalaqaboom','command_object_repository':'DosareRepository','authenticated_user':'popescu.cristian@gmail.com'}"
+"{\"command_predicate\":\"Update\",\"command_object_repository\":\"DosareRepository\",\"command_arguments\":{'ID':3,'VALOARE_DAUNA':'336,555','VALOARE_REGRES':'777,3339'},'authenticated_user':'popescu.cristian@gmail.com'}"
+
+ "{'command_predicate':'GetFiltered', 'redis_client_id': 'test','authenticated_user':'popescu.cristian@gmail.com','command_object_repository':'UtilizatoriRepository','command_arguments':{'sort':null,'order':null,'limit':null,'filter':{'EMAIL':'popescu.cristian@gmail.com'} }}"
